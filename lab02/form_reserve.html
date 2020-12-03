@@ -6,56 +6,85 @@
  <title>Form demo</title>
 </head>
 <body>
- <h3>Form Demo</h3>
+ <h3>Hotel Booking </h3>
  <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
-<table border="1">
+<table border="0">
 <tr> 
-    <td><label for="name">Room Type:</label></td>
-    <td><input type="text" name="roomtype" id="roomtype"></td>
+    <td><label for="Room">Room Type:</label></td>
+    <td><select name="roomtype">
+        <option value="0">--Please Select--</option>
+        <option value="1">Standard</option>
+        <option value="2">Luxury</option>
+        <option value="3">Deluxe</option></td>
 </tr>
  
 <tr>   
-    <td><label for="name">Number of Guests:</label></td>
-    <td><input type="text" name="numguest" id="numguest"></tr>
-</tr>
-
-<tr>   
-    <td><label for="name">Name:</label></td>
-    <td><input type="text" name="name" id="name">
-    <input type="text" name="lname" id="lname">
+    <td><label for="Number">Number of Guests:</label></td>
+    <td><select name="numguest">
+        <option value="0">--Please Select--</option>
+        <option value="1">1-2</option>
+        <option value="2">3-4</option>
+        <option value="3">5-6</option>
+        <option value="4">7-8</option>
     </td>
 </tr>
 
 <tr>   
-    <td><label for="name">Email:</label></td>
-    <td><input type="text" name="email" id="email">
+    <td><label for="name">Name:</label></td>
+    <td><input type="text" name="name" id="name" value="First">&emsp;
+    <input type="text" name="lname" id="lname" value="last">
+    </td>
+</tr>
+
+<tr>   
+    <td><label for="email">Email:</label></td>
+    <td><input type="text" name="email" id="email" value="john@company.com">
     </td>    
 </tr>
- <label for="passwd">รหัสผ่าน:</label>
- <input type="password" name="passwd" id="passwd">
- <br><br>
- <label for="sex">เพศ:</label>
- <input type="radio" name="sex" id="sex" value="M">ชาย
- <input type="radio" name="sex" id="sex" value="F">หญิง
- <br>
- <label for="choice">งานอดิเรก:</label>
- <input type="checkbox" name="choice1" id="choice1" value="1">ดูหนัง
- <input type="checkbox" name="choice2" id="choice2" value="2">ฟังเพลง
- <input type="checkbox" name="choice3" id="choice3" value="3">เล่นเกม
- <br><br>
- <label for="emotion">ความรู้สึกตอนนี้:</label>
- <select name="emotion">
- <option value="0">--Select one--</option>
- <option value="1">Happy</option>
- <option value="2">Sad</option>
- <option value="3">Fun</option>
- </select>
- <br><br>
- ข้อเสนอแนะ:
- <Textarea name="commmet" id="comment" rows="5" cols="50"></Textarea>
- <br><br>
- <input type="submit" value="Send">
- <input type="reset" value="Clear">
+
+<tr>   
+    <td><label for="start">Arrival:</label></td>
+    <td>
+        <input type="date" id="start" name="arrivaldate">&emsp;&emsp;&emsp;
+        <input type="time" id="start" name="arrivaltime">
+    </td>
+</tr>
+
+<tr>   
+    <td><label for="date&time">Departure:</label></td>
+    <td>
+        <input type="date" id="start" name="departuredate">&emsp;&emsp;&emsp;
+        <input type="time" id="start" name="departuretime">
+    </td>
+</tr>
+
+<tr>   
+    <td><label for="car">Free Pickup:</label></td>
+    <td><input type="radio" name="pick" id="pick" value="Yes"> Yes sure!<br>   
+        <input type="radio" name="pick" id="pick" value="No"> No, I already rented a car. 
+    </td> 
+</tr>
+
+<tr>   
+    <td><label for="Fight Number">Fight Number:</label></td>
+    <td><input type="text" name="flightnum" id="flightnum" value="C1209">
+    </td>
+</tr>
+
+<tr>   
+    <td><label for="Other requests">Other requests:</label></td>
+    <td><Textarea name="otherreq" id="otherreq" rows="5" cols="50"></Textarea>   
+    </td>
+</tr>
+<tr>   
+    <td Colspan="2">
+        <center>
+            <input type="submit" value="Complete Reservation">
+        <center>    
+    <td>   
+</td> 
+<tr> 
+</table>   
  </form>
 </body>
 </html>
