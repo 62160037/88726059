@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function summary(){
+          sum = document.getElementById('sum').innerHTML=""
+          x = document.getElementById('a');
+          y = document.getElementById('b');
+          sum = document.getElementById('sum');
+          sumall = document.getElementById('sumall');
+          var t = 0;
+          
+    for ( let i = parseInt(a.value);i<=parseInt(b.value);i++) {
+        t = t+i;
+        sumall.innerHTML=t
+
+        sum.innerHTML +=i
+        if(i<parseInt(b.value)){
+            
+            sum.innerHTML += "+"
+        }
+        if(i==parseInt(b.value)){
+            sum.innerHTML += "="
+        }
+        
+    }
+    
+}
+</script>
+</head>
+<body>
+            <input type="text" placeholder="ใส่ตัวเลข" id="a"> -  
+            <input type="text" placeholder="ใส่ตัวเลข" id="b">
+            <button onclick="summary()">คำนวน</button>
+            <div id="sum"></div>
+            <div id="sumall"></div>
+            
+</body>
+</html>
+
+           
